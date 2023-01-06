@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Control8">
+   <children>
+      <Button layoutX="852.0" mnemonicParsing="false" onAction="#Close_BUTTON" prefHeight="51.0" prefWidth="27.0" style="-fx-background-color: black;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="31.0" layoutY="51.0" prefHeight="462.0" prefWidth="838.0" style="-fx-background-color: #FF7F50; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad Requests" wrappingWidth="319.24261474609375">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button layoutX="14.0" layoutY="384.0" mnemonicParsing="false" onAction="#Go_Back_BTN" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: skyblue; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 3;" text="Go BACK">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <TableView fx:id="Table" layoutX="360.0" layoutY="67.0" prefHeight="327.0" prefWidth="463.0">
+              <columns>
+                <TableColumn fx:id="Location_Column" prefWidth="96.79998779296875" text="Location" />
+                <TableColumn fx:id="OwnerName_Column" prefWidth="91.19998168945312" text="Owner Name" />
+                  <TableColumn fx:id="HouseNO_Column" prefWidth="91.19998168945312" text="House #" />
+                  <TableColumn fx:id="Marla_Column" prefWidth="91.19998168945312" text="Marla" />
+                  <TableColumn fx:id="Price_Column" prefWidth="91.19998168945312" text="Price PKR" />
+              </columns>
+            </TableView>
+            <Button layoutX="184.0" layoutY="384.0" mnemonicParsing="false" onAction="#POST_BTN" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: skyblue; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 3;" text="POST">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="31.0" layoutY="93.0" prefHeight="30.0" prefWidth="99.0" text="Location" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="131.0" prefHeight="30.0" prefWidth="99.0" text="Owner" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="169.0" prefHeight="30.0" prefWidth="99.0" text="House #" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="207.0" prefHeight="30.0" prefWidth="99.0" text="Marla" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="244.0" prefHeight="30.0" prefWidth="99.0" text="Price" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L1" layoutX="134.0" layoutY="93.0" prefHeight="30.0" prefWidth="192.0" text="null" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L2" layoutX="134.0" layoutY="131.0" prefHeight="30.0" prefWidth="192.0" text="null" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L3" layoutX="134.0" layoutY="169.0" prefHeight="30.0" prefWidth="192.0" text="null" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L4" layoutX="134.0" layoutY="207.0" prefHeight="30.0" prefWidth="192.0" text="null" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="L5" layoutX="134.0" layoutY="244.0" prefHeight="30.0" prefWidth="192.0" text="null" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="31.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrator Sign-In">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
